@@ -5,6 +5,7 @@ class Admin {
     String name;
     double salary;
     double allowance;
+    int idd;
 
     // Default Constructor
     Admin() {
@@ -26,12 +27,15 @@ class Admin {
     void setId(int i) {
         this.id = i;
     }
+
     void setName(String n) {
         this.name = n;
     }
+
     void setSalary(double s) {
         this.salary = s;
     }
+
     void setAllowance(double a) {
         this.allowance = a;
     }
@@ -40,12 +44,15 @@ class Admin {
     int getId() {
         return id;
     }
+
     String getName() {
         return name;
     }
+
     double getSalary() {
         return salary;
     }
+
     double getAllowance() {
         return allowance;
     }
@@ -56,6 +63,10 @@ class Admin {
         System.out.println("Name: " + name);
         System.out.println("Salary: " + salary);
         System.out.println("Allowance: " + allowance);
+    }
+
+    void atul() {
+        System.out.println("atul chavan");
     }
 } // Admin class end here
 
