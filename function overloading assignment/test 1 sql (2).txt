@@ -1,0 +1,38 @@
+Name : Atul shantaram Chavan 
+Set  : B
+
+que 1  : select name from customers order by name;
+
+que 2  : select product_price from product order by product_price desc limit 10;
+
+que 3  : select max(salary) from employee where salary < (select max(salary) from employee;
+
+que 4 : select city, count(*) from customers group by city;
+
+que 5 : select department_id,sum(salary) from employees group by department  having salary > 200000 ;  
+
+que 6 : select right(phone_number)left(customer_name,3) from employee;
+
+que 7 : select * from product where product_name like '%pro%';
+
+--pendding
+que 8 :select count (*) as total_s  from student group by course_id having count(*) >= 30;  
+
+
+que 9 :
+
+
+que 10 : select max(salary) min(salary) from employees group by department_id;
+
+
+que 11 : A
+
+que 12 : B 
+
+que 13 : A
+
+que 14 : A
+
+que 15 : B
+
+que 16 
