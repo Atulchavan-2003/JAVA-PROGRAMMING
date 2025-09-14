@@ -3,8 +3,10 @@ class Product {
     String pname;
     double costPrice;
     int quantity;
-   static int discount;
-
+   static double discount;
+       static {
+           discount = 15;
+	}
     // Default constructor
     Product() {
         this.pid = 103;
@@ -37,7 +39,9 @@ class Product {
     void setQuantity(int quantity) {
         this.quantity = quantity;
     }
-
+    void setDiscount(double d){
+    	discount = d;
+    }
     // Getters
     int getPid() {
         return this.pid;
@@ -54,6 +58,15 @@ class Product {
     int getQuantity() {
         return this.quantity;
     }
+    double getDicount(){
+    	return discount;
+    }
+    double applyDiscount(){
+	return this.costPrice/100*discount;
+    }
+    double calculateSellprice(){
+	return this.quantity * this.costPrice; 	
+    }
 
     // Display product details
     void display() {
@@ -61,7 +74,9 @@ class Product {
         System.out.println("Product Name    : " + this.pname);
         System.out.println("Cost Price      : " + this.costPrice);
         System.out.println("Quantity        : " + this.quantity);
-    }
+	System.out.println("Discount :"+ applyDiscount()*this.quantity+"\n");
+	System.out.println("Calculateselling price :"+calculateSellprice ()+"\n");
+	}
 }
 
 // Test class
