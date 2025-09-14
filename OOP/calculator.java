@@ -1,7 +1,4 @@
 class Calculator {
-	void laxma() {
-		System.out.println("hello luxman");
-	}
 
 	void add(int a, int b) {
 		System.out.println("Result is" + (a + b));
