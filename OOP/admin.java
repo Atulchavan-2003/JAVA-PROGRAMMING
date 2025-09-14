@@ -5,7 +5,6 @@ class Admin {
     String name;
     double salary;
     double allowance;
-    int idd;
 
     // Default Constructor
     Admin() {
@@ -65,8 +64,8 @@ class Admin {
         System.out.println("Allowance: " + allowance);
     }
 
-    void atul() {
-        System.out.println("atul chavan");
+    void ak() {
+        System.out.println("chavan atul");
     }
 } // Admin class end here
 
