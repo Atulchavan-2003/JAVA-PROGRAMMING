@@ -9,13 +9,13 @@ class Shirt {
     static double medium = 0.10;
     static double large = 0.20;
     static double xlarge = 0.30;
-
+    
     Shirt() {
         this.sid = 5;
         this.brand = "puma";
         this.type = "Casual";
-        this.price = 5000;
-        this.size = "small";
+        this.price = 1000;
+        this.size = "large";
     }
 
   
@@ -69,8 +69,20 @@ class Shirt {
         return this.size;
     }
 
-    void calculateFinalPrice() {
-        
+    double calculateFinalPrice() {
+        if(this.size.equals("small")){
+	    return this.price;
+	}
+	else if(this.size == "medium"){
+	   return this.price+this.price * medium;
+	}
+	else if(this.size == "large"){
+	 return this.price+this.price*large;
+	}
+	else{
+	 return this.price + this.price*xlarge;
+	}
+
     }	
 
     // Display method
@@ -80,6 +92,7 @@ class Shirt {
         System.out.println("Type        : " + this.type);
         System.out.println("Base Price  : " + this.price);
         System.out.println("Size        : " + this.size);
+        System.out.println("final calculater :"+calculateFinalPrice()+"\n\n");
      
     }
 }
@@ -92,7 +105,7 @@ class Test {
         s1.display();
 
         // Using parameterized constructor
-        Shirt s2 = new Shirt(101, "Peter England", "Formal", 1200, "small");
+        Shirt s2 = new Shirt(101, "Peter England", "Formal", 1000, "xlarge");
         s2.display();
 
         // Another example
