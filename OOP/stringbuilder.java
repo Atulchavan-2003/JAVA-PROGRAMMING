@@ -17,4 +17,3 @@ public class stringbuilder {
         System.out.println(sb.reverse());
     }
 }
-
