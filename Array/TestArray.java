@@ -1,5 +1,5 @@
 
-class Test {
+class TestArray {
     public static void main(String[] args) {
         int[] arr = new int[5]; 
 	

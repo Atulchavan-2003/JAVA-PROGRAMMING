@@ -52,7 +52,7 @@ class Employee {
     }
 }
 
-class Test {
+class Testemp {
     public static void main(String[] args) {
        
 	 Employee[] arr = new Employee[5]; 

@@ -13,7 +13,8 @@ public class stringbuilder {
 
         sb.delete(0, 1);
         System.out.println(sb);
-
-        System.out.println(sb.reverse());
+     
+       System.out.println(sb.reverse());
     }
 }
+
