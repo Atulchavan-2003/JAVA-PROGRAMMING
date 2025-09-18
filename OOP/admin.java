@@ -69,7 +69,7 @@ class Admin {
     }
 } // Admin class end here
 
-class Test {
+class TestAdmin {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 
