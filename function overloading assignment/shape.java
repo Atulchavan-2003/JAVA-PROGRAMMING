@@ -107,7 +107,7 @@ class Rectangle{
 
 }
 
-class Test {
+class TestShape {
     public static void main(String[] args) {
 	 Scanner sc = new Scanner(System.in);
         Shape s1 = new Shape();

@@ -66,7 +66,7 @@ class Printer {
     }
 }
 
-class Test {
+class TestPrit {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

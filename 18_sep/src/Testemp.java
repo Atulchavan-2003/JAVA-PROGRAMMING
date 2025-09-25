@@ -79,8 +79,7 @@ class Hr extends Employee{
 	double commision ;
 	
 	Hr() {
-		super();
-		// TODO Auto-generated constructor stub
+		this.commision=0;
 	}
 
 	Hr(int m, String n, double s,double commision) {
@@ -99,7 +98,7 @@ class Admin2 extends Employee{
 
 	Admin2() {
 		super();
-		
+		this.allownce = 0;
 	}
 
 	Admin2(int m, String n, double s,double allownce) {
@@ -123,3 +122,4 @@ class Testemp {
          a.display();
     }
 }
+

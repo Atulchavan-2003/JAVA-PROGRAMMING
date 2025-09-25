@@ -79,7 +79,7 @@ class Calculator {
     }
 }
 
-class Test {
+class Testcalculater {
     public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
 
@@ -98,8 +98,7 @@ class Test {
         Calculator c1 = new Calculator(a, b);
         Calculator c2 = new Calculator(d1, d2);
 
-        c1.display();
-        c2.display();
+       
 
        
         c1.add(a, b);

@@ -1,4 +1,4 @@
-class date {
+class date1 {
 	int day, month, year;
 	String dow;
 
@@ -18,13 +18,9 @@ class date {
 		dow = str;
 	} // setday end here
 
-}// date class end here
+}// date class end here}
 
-class atul {
-	// hello atul
-}
-
-class test {
+class Testdate {
 	public static void main(String args[]) {
 
 		date d1 = new date();

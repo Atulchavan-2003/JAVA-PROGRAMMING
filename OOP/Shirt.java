@@ -98,7 +98,7 @@ class Shirt {
 }
 
 // Test class
-class Test {
+class TestShirt {
     public static void main(String[] args) {
         // Using default constructor
         Shirt s1 = new Shirt();

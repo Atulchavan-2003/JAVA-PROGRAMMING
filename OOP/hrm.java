@@ -34,7 +34,7 @@ class HRM {
     }
 } // HRM class end here
 
-class test {
+class Testhrm {
     public static void main(String args[]) {
 	Scanner sc = new Scanner(System.in);
         HRM h1 = new HRM();
@@ -43,7 +43,7 @@ class test {
          int id = sc.nextInt();
          sc.nextLine();
 	 System.out.println("Enter the salary");
-         double sal = sc.nextLine();
+         double sal = sc.nextDouble();
 	 System.out.println("Enter the commission");	
          double  com = sc.nextDouble();
         // Set values

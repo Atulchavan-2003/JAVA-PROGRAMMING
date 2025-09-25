@@ -5,7 +5,9 @@ class BankAccount {
      int accountNo;
      String name;
      double balance;
+
     static double interestRate; //
+
          static {
 		    interestRate = 9.3;	
 		}

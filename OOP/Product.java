@@ -16,7 +16,7 @@ class Product {
     }
 
     // Parameterized constructor
-    Product(int pid, String pname, double costPrice, int quantity) {
+    Product(int pid, String pname, double costPrice, int quantity){
         this.pid = pid;
         this.pname = pname;
         this.costPrice = costPrice;

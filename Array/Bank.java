@@ -1,5 +1,7 @@
 import java.util.Scanner;
 class Bank {
+      
+     
     void approveLoan(Student s) {
         if (s.getPercentage() > 80) {
             System.out.println("Loan Approved for Student: 2 lakh");
@@ -127,7 +129,7 @@ class Employee {
     }
 }
 
-class TestBank {
+class Test {
     public static void main(String args[]) {
 
              Scanner sc =  new Scanner(System.in);

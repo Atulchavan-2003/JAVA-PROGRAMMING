@@ -33,7 +33,7 @@ class Student {
     }
 } // Student class end here
 
-class test {
+class testStudent{
     public static void main(String args[]) {
         Student s1 = new Student();
                 // Using getters

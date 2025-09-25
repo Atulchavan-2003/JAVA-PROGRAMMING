@@ -1,6 +1,6 @@
 
 
-class Employee {
+abstract class Employee {
     int memberId;
     String name;
     double salary;
@@ -51,7 +51,9 @@ class Employee {
         System.out.println("Employee Name: " + this.name);
         System.out.println("Employee Salary: " + this.salary);
     }
+    abstract double calsal();
 }
+
 class SalesManager2 extends Employee{
 	 double insentive;
 	 int target;
@@ -66,21 +68,38 @@ class SalesManager2 extends Employee{
 		this.insentive = insentive;
 		this.target = target;
 	}
+	
+	double getInsentive() {
+		return insentive;
+	}
+
+	void setInsentive(double insentive) {
+		this.insentive = insentive;
+	}
+
+	int getTarget() {
+		return target;
+	}
+
+	void setTarget(int target) {
+		this.target = target;
+	}
 
 	void display() {
 		super.display();
 		System.out.println("insentive is :"+this.insentive);
 		System.out.println("target is:"+this.target);
 	}
-	
+	double calsal(){
+		return this.salary + this.insentive + this.insentive + this.target;
+	}
 	 
 }
 class Hr extends Employee{
 	double commision ;
 	
 	Hr() {
-		super();
-		// TODO Auto-generated constructor stub
+		this.commision=0;
 	}
 
 	Hr(int m, String n, double s,double commision) {
@@ -91,6 +110,9 @@ class Hr extends Employee{
 		super.display();
 		System.out.println("commision is "+this.commision);
 	}
+	double calsal(){
+		return this.salary + this.commision;
+	}
 
      
 }
@@ -99,7 +121,7 @@ class Admin2 extends Employee{
 
 	Admin2() {
 		super();
-		
+		this.allownce = 0;
 	}
 
 	Admin2(int m, String n, double s,double allownce) {
@@ -110,16 +132,52 @@ class Admin2 extends Employee{
 		super.display();
 		System.out.println("allownce is:"+this.allownce);
 	}
+	double calsal(){
+		return this.salary + this.allownce;
+	}
+	
 	
 }
 
 class Testemp {
-    public static void main(String[] args) {
-         Employee e1 = new Employee();
+	
+	public static void main(String args[]) {
+	      Employee e1;
+	      
+	      e1 = new SalesManager2(1,"atul",200000,23,56);
+		  Testemp.myfun(e1);
+		  
+		  e1=new Hr(3,"rahul",50000,6523);
+		  Testemp.myfun(e1);
+	}
+	static void myfun(Employee e1) {
+		System.out.println(e1.getName());
+		System.out.println(e1.calsal());
+		
+		if (e1 instanceof SalesManager2) {
+			SalesManager2 s1 = (SalesManager2)e1;
+			System.out.println(s1.getInsentive());
+		}
+		
+	}
+	
+    public static void main1(String[] args) {
+         Employee e1 ;
+//         e1.display();
+//         System.out.println(e1.calsal());  
+         
+         e1 = new SalesManager2(1,"atul",200000,23,56);
          e1.display();
-         Hr h = new Hr();
-         h.display();
-         Admin2 a = new Admin2(1,"rahul",2000,200);
-         a.display();
+         System.out.println(e1.calsal());  
+         
+         e1=new Hr(3,"rahul",50000,6523);
+         e1.display();
+         System.out.println(e1.calsal());  
+         
+         e1 = new Admin2(4,"akash",62300,5200);
+         e1.display();
+         e1.calsal();
     }
 }
+
+

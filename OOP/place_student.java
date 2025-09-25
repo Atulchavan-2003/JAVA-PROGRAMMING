@@ -48,7 +48,7 @@ class PlaceStudent {
     }
 } // PlaceStudent class end here
 
-class Test {
+class Testplace{
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 

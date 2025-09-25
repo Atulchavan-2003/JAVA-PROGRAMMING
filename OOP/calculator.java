@@ -22,7 +22,7 @@ class Calculator {
 }// Class Calculator ends here
 	///////
 
-class Test {
+class Testcal {
 	public static void main(String[] args) {
 		Calculator c1 = new Calculator();
 		int a = 10, b = 20;

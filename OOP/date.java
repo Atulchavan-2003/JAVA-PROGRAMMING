@@ -74,7 +74,7 @@ class date{
 
 }//date class end here 
 
-class test {
+class Testdate3 {
 	public static void main(String args[]){
 		Scanner sc = new Scanner(System.in);
 		date d1 = new date();

@@ -25,7 +25,7 @@ class Distance {
     }
 } // Distance class end here
 
-class test {
+class TestDistance {
     public static void main(String args[]) {
         Distance d1 = new Distance();
 

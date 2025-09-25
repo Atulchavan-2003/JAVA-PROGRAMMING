@@ -44,7 +44,7 @@ class ElectricityBill{
 	    return this.unit;
 	}
 	double getRate(){
-	    return this.rate;
+	    return rate;
 	}
         void calculater(){
             System.out.println("total rate is "+ rate * this.unit);
@@ -54,7 +54,7 @@ class ElectricityBill{
 		System.out.println(" bill id :"+ this.b_id);
 		System.out.println(" bill name :"+ this.name);
 		System.out.println(" bill unit :"+ this.unit);
-		System.out.println(" bill rate :"+ this.rate);
+		System.out.println(" bill rate :"+ rate);
 
 	}
 
