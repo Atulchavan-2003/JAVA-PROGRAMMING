@@ -87,13 +87,20 @@ class Book{
       
 }
 class Library{
+	 int size=50;
 	  int counter = 0;
-	  Book[] bookArr = new Book[50];
+	  Book[] bookArr = new Book[size];
 	      
 	  
 	  	Library() {
 	        hardcodedBooks();
 	    }
+	   void addOneBook(){ 
+		  if(this.size<=counter) {
+			  
+		  }
+	   } 
+	  	
 	   void hardcodedBooks() {
 		   bookArr[counter++] = new Book(101, "Atomic Habits", "James Clear", "Self-Help", 2.1f,200);
 		   bookArr[counter++] = new Book(102, "Clean Code", "Robert Martin", "Programming", 4.8f,550);
@@ -268,7 +275,7 @@ class Library{
 	   
 }
 
-public class Testbook {
+ class Testbook {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Library l1 = new Library();
@@ -320,6 +327,6 @@ public class Testbook {
 
 
         System.out.println("Exiting program. Thank you!");
-        sc.close();
+  
     }
 }
