@@ -1,25 +1,41 @@
 package em;
+
 class IndvalideMarkExceptio extends Exception {
 	
 	public String toString() {
 		return "invalid mark";
 	}
-}
+} //exeption class end here 
+
 class CheckMark{
-	int mark;
+	int marks;
 	
 	CheckMark(int mark) {
 		super();
-		this.mark = mark;
+		this.marks = mark;
 	}
 
 	void validDate() throws IndvalideMarkExceptio {
 		
-				if(mark > 100 && mark < 0) {
+				if(marks > 100 && marks < 0) {
 					throw new IndvalideMarkExceptio();
 				}
 				else {
-					System.out.println("mark is correct on business logic");
+					if (marks >= 75){
+					 	System.out.println("Distinction");
+					 }
+					 else if (marks >= 65){
+					 	System.out.println("First class");
+					 }
+					 else if (marks >= 55){
+					 	System.out.println("second class");
+					 }
+					 else if (marks >= 40){
+					 	System.out.println("Pass class");
+					 }
+					 else if (marks <= 40 ){
+					 	System.out.println("Fail");
+					 }
 				}
 		
 	}
