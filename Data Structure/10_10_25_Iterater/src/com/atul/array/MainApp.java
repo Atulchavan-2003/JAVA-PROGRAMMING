@@ -34,6 +34,7 @@ public class MainApp {
 	public static void main(String[] args) {
 		int[] arr = {10,0,18,00,42,55,0,15,0,5};
 		
+		System.out.println();
 
 	}
 

@@ -68,7 +68,7 @@ public class EmpLink {
 	     
 	        if (start == end) {
 	            start = end = null;
-	            System.out.println("First node deleted, list is now empty.");
+	            System.out.println("First node deleted, list is now empty."); 
 	            return;
 	        }
 

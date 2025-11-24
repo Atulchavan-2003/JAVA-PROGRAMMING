@@ -13,5 +13,6 @@ public class TestLinklist {
 		
 		m1.position(2,posi);
 		m1.display();
+		m1.rivDisplay();
 	}
 }

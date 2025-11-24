@@ -31,7 +31,9 @@ public class MyLInkedList {
 		        start = temp;
 		}
 	}
-	
+	void rivDisplay() {
+		 
+	}
 	void display() {
 		Node itr = start;
 		
