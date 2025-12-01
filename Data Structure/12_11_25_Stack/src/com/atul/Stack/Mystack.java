@@ -40,21 +40,22 @@ public class Mystack {
         }
 		
 	}
-	void pushBottum(int data) {
+	Node pushBottum(int data) {
 		
 		if(top == stack.length) {
 			System.out.println("stack is overflow!");
-			return;
+			return null;
 		}
 		if(top == 0) {
 			
 			stack[top++]= new Node(data);
-			return;
+			return null;
 		}
 		
 		Node temp = 
 		
 		pushBottum(stack[--top].data);
+		return temp;
 		
 		
 		
