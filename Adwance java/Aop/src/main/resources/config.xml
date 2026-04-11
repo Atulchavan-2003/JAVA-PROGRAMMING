@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+<bean id="stud" class="com.atul.Aop.Student"/>
+<bean id="service" class="com.atul.Aop.CheckValidity"/>
+
+<aop:config>
+<aop:aspect ref="service">
+<aop:pointcut expression="execution(* com.atul.Aop.*.takeExams(..))" id="pointCutId"/>
+<!--  package.class.method(type)  -->
+<!--  a method that returns anything, belongs to 
+				com.phoenix.demos package, any class 
+				Any method that takes any parameter  -->
+<aop:before method="hasPaid" pointcut-ref="pointCutId"/>
+</aop:aspect>
+</aop:config>
+</beans>

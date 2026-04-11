@@ -1,0 +1,13 @@
+package com.atul.SpringExeption;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringExeptionApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringExeptionApplication.class, args);
+	}
+
+}
