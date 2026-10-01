@@ -18,7 +18,7 @@ public class InsertDemo {
 		 
 		
 		ps.setInt(1,5);
-		ps.setString(2,"met");
+		ps.setString(2,"met"); 
 		ps.setInt(3, 56);
 		ps.setString(4,"mayur");
 		

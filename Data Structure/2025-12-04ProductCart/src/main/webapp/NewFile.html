@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+	#btn
+	{
+	background-color: blue;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: 300;
+	border: none;
+	width: 200px;
+	}
+	form
+	{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	}
+</style>
+<body>
+	<form action="productCart" method="get">
+	<img alt="" src=" https://imgd.aeplcdn.com/227x128/n/cw/ec/55215/defender-exterior-right-front-three-quarter-23.png?isig=0&q=80" >
+	<br>
+	<input type="checkbox" name="car" value="defender">
+	<br>
+	<img alt="" src="https://imgd.aeplcdn.com/227x128/n/cw/ec/107719/range-rover-exterior-right-front-three-quarter-47.png?isig=0&q=80" >
+	<br>
+	<input type="checkbox" name="car" value="rangerover">
+	<br>
+	<img alt="" src="https://imgd.aeplcdn.com/227x128/n/cw/ec/127321/discovery-sport-exterior-right-front-three-quarter-42.png?isig=0&q=80">
+	<br>
+	<input type="checkbox" name="car" value="discovery">
+	<br>
+	<input type="submit" value="submit" id="btn">
+	</form>
+</body>
+</html>

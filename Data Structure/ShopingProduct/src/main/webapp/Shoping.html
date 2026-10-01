@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple E-commerce</title>
+    <style>
+        .product {
+            border: 1px solid #aaa;
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Select Product</h2>
+
+<form action="ProductServlet" method="POST">
+
+    <div class="product">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2025/12/564325299/QG/FD/ZP/41207384/logitech-zone-vibe-100-headphone-500x500.jpg" alt="Boat">
+        <h3>Boat Earphone</h3>
+        <p>499</p>
+        
+        <label>
+        <input type="checkbox" name="productId" value="1"> Select
+        </label>
+        
+    </div>
+
+    <div class="product">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.lL2X4QV-ZLqQubgJnMSy3QHaI7?pid=Api&P=0&h=220" alt="P2">
+        <h3>JBL ALTRA</h3>
+        <p>299</p>
+       <label>
+        <input type="checkbox" name="productId" value="2"> Select
+        </label>
+    </div>
+
+    <br><br>
+    <button type="submit">Buy Now</button>
+
+</form>
+
+</body>
+</html>

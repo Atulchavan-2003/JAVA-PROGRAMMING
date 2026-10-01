@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id = "hello" class = "com.atul.springAop.ShowGreeting">
+		<!-- <constructor-arg value="Hello parameter"></constructor-arg>
+		<constructor-arg value ="hello from"></constructor-arg> -->
+		
+		<property name = "from" value ="hello atul"></property>
+		<property name = "msg" value ="hello"></property>
+	</bean>
+ 
+
+</beans>

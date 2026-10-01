@@ -21,7 +21,7 @@ public class MainApp {
 		
 		
 		List<String> list1 =Arrays.asList("monday","tuesday");
-		//list2.add("atul"); // you can not change it value because asList fix array.
+		//list1.add("atul"); // you can not change it value because asList fix array.
 		list1.set(0,"wednesday" );
 	 	
 		System.out.println(list1);

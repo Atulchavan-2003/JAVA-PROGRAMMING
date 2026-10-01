@@ -14,7 +14,7 @@ public class MainApp {
 		a1.add("arvind");
 		a1.add("rahul");
 		a1.add("prashant");
-//	
+	
 //		for (String str : a1) {
 //		
 //			if(str.equals("arvind")) {
@@ -23,7 +23,7 @@ public class MainApp {
 //			
 //		}
 //		System.out.println(a1);
-		
+//		
 		Iterator<String> itr = a1.iterator();
 		
 		while(itr.hasNext()) {

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple E-commerce</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background:#f4f4f4;
+        }
+        .product{
+            border:1px solid #aaa;
+            width:220px;
+            padding:10px;
+            margin:15px;
+            display:inline-block;
+            text-align:center;
+            background:white;
+            box-shadow:0 0 10px #ccc;
+        }
+        .product img{
+            width:150px;
+            height:150px;
+        }
+        .product button{
+            background:green;
+            color:white;
+            border:none;
+            padding:6px 12px;
+            cursor:pointer;
+        }
+        .product button:hover{
+            background:darkgreen;
+        }
+    </style>
+
+</head>
+<body>
+
+<h2>Product List</h2>
+
+
+<div class="product">
+    <img src="IMAGE/LAPTOP.jpg"><br>
+    <b>Laptop</b><br>
+    ₹ 55000 <br><br>
+
+    <form action="Pservlet" method="post">
+    
+    	<input type ="hidden" name = "image" value ="IMAGE/LAPTOP.jpg" >
+        <input type="hidden" name="action" value="add">
+        <input type="hidden" name="product" value="Laptop">
+          <input type="hidden" name="price" value="55000">
+        <button type="submit">Add to Cart</button>
+    </form>
+</div>
+
+
+<div class="product">
+    <img src="IMAGE/APPLE.jpg"><br>
+    <b>Mobile</b><br>
+    ₹ 50000 <br><br>
+
+    <form action="Pservlet" method="post">
+    
+    	<input type ="hidden" name = "image" value ="IMAGE/APPLE.jpg" >
+        <input type="hidden" name="action" value="add">
+        <input type="hidden" name="product" value="Mobile">
+          <input type="hidden" name="price" value="50000">
+        <button type="submit">Add to Cart</button>
+    </form>
+</div>
+
+
+<div class="product">
+    <img src="IMAGE/JBL.jpg"><br>
+    <b>Headphone</b><br>
+    ₹ 2000 <br><br>
+
+    <form action="Pservlet" method="post">
+    <!-- 	<input type ="hidden" name = "productId" value =""> -->
+    	<input type ="hidden" name = "image" value ="IMAGE/JBL.jpg" >
+        <input type="hidden" name="action" value="add">
+        <input type="hidden" name="product" value="Headphone">
+          <input type="hidden" name="price" value="2000">
+        <button type="submit">Add to Cart</button>
+    </form>
+</div>
+
+<br><br>
+<a href="Cart.jsp">View Cart</a>
+
+</body>
+</html>
